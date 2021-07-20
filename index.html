@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Zomato</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+         <nav class="navbar">
+             <div class="navbar_brand">
+                 <img src="./assets/logo.png" alt="logo" class="brand_logo"/>
+             </div>
+             <div class="navbar_nav_items">
+                    <button class="button_primary hide__mobile">Order Food</button>
+             </div>
+         </nav>
+        </header>
+        <main class="container">
+            <section class="hero_container">
+                <div class="hero_image_container">
+                    <img src="./assets/hero.jpg" alt="hero image" class="hero_image"/>
+                    <img src="./assets/svg/herobgpattren.svg" alt="hero image shape" class="hero_image_pattern">
+                    <img src="./assets/svg/heroShape.svg" alt="hero image shape" class="hero_image_shape">
+                </div>
+                <div class="hero_des">
+                    <h1 class="hero_text">Order food from <br> favourite restaurants <br> near you</h1>
+                    <button class="button_primary lab">Order Now</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a class="quote">“Some people have nothing good in their life </a><br>
+                    <a  class="quote">except the food they can eat. </a> <br>
+                    <a class="quote">And I think for a brief moment </a><br>
+                    <a class="quote">that's all you need to be happy.”</a><br><br>
+                    <a style="margin-left: 30%; font-weight: bold;">       - Anonymous</a>
+                    <br><br>
+                    <br><br>
+                </div>
+            </section>
+            <section class="video_footage_container">
+                <div class="video_footage">
+                    <iframe src="https://player.vimeo.com/video/323795266" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="chef__video"></iframe>
+                </div>
+                <div class="video_footage_text">
+                    <p>
+                       Your food will be prepared safely with <br>an experienced chef, without<br>
+                        compromising on the quality and <br>hygiene.
+                    </p>
+                </div>
+            </section>
+            <section class="food_container">
+                <h1 class="text-x1"><strong>Explore menu</strong></h1>
+                <div class="food_list_container_diagonal"></div>
+                <div class="food_menu_card_list">
+                    <div class="food_menu_card">
+                        <img src="./assets/burger.jpg" alt="burger" class="food_menu_card_image">
+                        <div class="food_menu_card_deatils">
+                            <h4 class="text-lg"><strong>Fresh Grilled Burgers</strong></h4>
+                            <p>
+                                "Burger King, Macdonals, On Place.."
+                                <span style="color: green;">+3</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="food_menu_card food_menu_card_move_up">
+                        <img src="./assets/pizza.jpg" alt="pizza" class="food_menu_card_image">
+                        <div class="food_menu_card_deatils">
+                            <h4 class="text-lg"><strong> 50% OFF on Pizza</strong></h4>
+                            <p>
+                                "Pizza Hut, Domino's Pizza, Somkin' Joes.."
+                                <span style="color:green;">+3</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="food_list_view_more">View More</div>
+            </section>
+            <section class="restaurant_list_container">
+                <div class="restaurant_list_text">
+                    <h4 class="text-x1" style="float:left">Order From 100s of <br>restaurants</h4>
+                </div>
+                <br><br>
+                <div class="restaurant_list_images_container row" style="float: right;">
+                    <div class="restaurant_list_row_1 column" >
+                        <div>
+                            <img src="./assets/restaurant1.jpg" alt="restaurant" class="restaurant1">
+                        </div>
+                        <img src="./assets/restaurant2.jpg" alt="restaurant" class="restaurant2">
+                    </div>
+                    <div class="restaurant_list_row_2 column">
+                        <img src="./assets/restaurant3.jpg" alt="restaurant" class="restaurant3">
+                        <img src="./assets/restaurant4.jpg" alt="restaurant" class="restaurant4"> 
+                    </div>
+                </div>
+            </section>
+            <br><br>
+            <br><br>
+            <section class="email__subcribe__container">
+                <div>
+                  <h1 class="text-xl"><strong>Stay Updated</strong></h1>
+                  <div class="email__subcribe__input__field">
+                    <div>
+                      <input
+                        type="email"
+                        placeholder="email@email.com"
+                        class="email__input"/>
+                    </div>
+                    <button class="button_primary">Get Updates</button>
+                  </div>
+                </div>
+              </section>
+        
+              <section class="quote__container">
+                <div class="quote_image_overlay"></div>
+                <h3 class="quote_image_text">
+                  When a man's stomach is full it makes no difference whether he is rich
+                  or poor.
+                </h3>
+              </section>
+            </main>
+            <footer>
+              <img src="./assets/logo1.png" alt="logo" style="float: left;"/>
+            </footer>
+            <script>
+              const hamburgermenu = document.getElementById("hamburgermenu");
+              const mobileNavDropDown = document.querySelector(
+                ".mobile__navbar__items"
+              );
+              window.addEventListener("click", () => {
+                if (mobileNavDropDown.classList.contains("hamburger__menu__close"))
+                  return mobileNavDropDown.classList.remove("hamburger__menu__close");
+                return mobileNavDropDown.classList.add("hamburger__menu__close");
+              });
+            </script>
+        </main>
+    </body>
+</html>
